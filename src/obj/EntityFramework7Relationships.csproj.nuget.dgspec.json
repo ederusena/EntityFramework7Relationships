@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/EntityFramework7Relationships.csproj": {}
+    "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj": {}
   },
   "projects": {
-    "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/EntityFramework7Relationships.csproj": {
+    "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/EntityFramework7Relationships.csproj",
+        "projectUniqueName": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj",
         "projectName": "EntityFramework7Relationships",
-        "projectPath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/EntityFramework7Relationships.csproj",
+        "projectPath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj",
         "packagesPath": "/home/ederu/.nuget/packages/",
-        "outputPath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/obj/",
+        "outputPath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ederu/.nuget/NuGet/NuGet.Config"

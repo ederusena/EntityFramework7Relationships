@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kX7yDluMFh8PDRu3Xy3giGivFXTLTQKjV7iVdaaGwcVUVMmj13Zx273vh+GSxVzy+tLMnvL3D1Db98Zk3w5ymA==",
+  "dgSpecHash": "LtigtJBvH2i+Mxuwao7pLgoO128QUrVv1n/3UnNJg11O8KyEZzSunafBkoAPaD0jizH4jWRipP6ixjupvHE3Aw==",
   "success": true,
-  "projectFilePath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/EntityFramework7Relationships.csproj",
+  "projectFilePath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj",
   "expectedPackageFiles": [
     "/home/ederu/.nuget/packages/microsoft.aspnetcore.openapi/7.0.5/microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "/home/ederu/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
