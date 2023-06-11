@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj": {}
+    "C:\\Users\\Eder\\Documents\\Workspace\\EntityFramework7Relationships\\src\\EntityFramework7Relationships.csproj": {}
   },
   "projects": {
-    "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj": {
+    "C:\\Users\\Eder\\Documents\\Workspace\\EntityFramework7Relationships\\src\\EntityFramework7Relationships.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj",
+        "projectUniqueName": "C:\\Users\\Eder\\Documents\\Workspace\\EntityFramework7Relationships\\src\\EntityFramework7Relationships.csproj",
         "projectName": "EntityFramework7Relationships",
-        "projectPath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/EntityFramework7Relationships.csproj",
-        "packagesPath": "/home/ederu/.nuget/packages/",
-        "outputPath": "/home/ederu/Workspace/DotNet/ProjetoCSharp/EntityFramework7Relationships/src/obj/",
+        "projectPath": "C:\\Users\\Eder\\Documents\\Workspace\\EntityFramework7Relationships\\src\\EntityFramework7Relationships.csproj",
+        "packagesPath": "C:\\Users\\Eder\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eder\\Documents\\Workspace\\EntityFramework7Relationships\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ederu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Eder\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +41,20 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
             },
@@ -66,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
