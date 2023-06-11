@@ -11,8 +11,8 @@ using src.Data;
 namespace EntityFramework7Relationships.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230611183906_CreateInitial")]
-    partial class CreateInitial
+    [Migration("20230611193124_Weapons")]
+    partial class Weapons
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,6 @@ namespace EntityFramework7Relationships.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -44,7 +43,7 @@ namespace EntityFramework7Relationships.Migrations
                     b.HasIndex("CharacterId")
                         .IsUnique();
 
-                    b.ToTable("Backpack");
+                    b.ToTable("Backpacks");
                 });
 
             modelBuilder.Entity("src.Models.CharacterModel", b =>
@@ -56,12 +55,32 @@ namespace EntityFramework7Relationships.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Character");
+                    b.ToTable("Characters");
+                });
+
+            modelBuilder.Entity("src.Models.WeaponModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CharacterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CharacterId");
+
+                    b.ToTable("Weapons");
                 });
 
             modelBuilder.Entity("src.Models.BackpackModel", b =>
@@ -75,10 +94,22 @@ namespace EntityFramework7Relationships.Migrations
                     b.Navigation("Character");
                 });
 
+            modelBuilder.Entity("src.Models.WeaponModel", b =>
+                {
+                    b.HasOne("src.Models.CharacterModel", "Character")
+                        .WithMany("Weapons")
+                        .HasForeignKey("CharacterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Character");
+                });
+
             modelBuilder.Entity("src.Models.CharacterModel", b =>
                 {
-                    b.Navigation("Backpack")
-                        .IsRequired();
+                    b.Navigation("Backpack");
+
+                    b.Navigation("Weapons");
                 });
 #pragma warning restore 612, 618
         }

@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace src.Models
 {
-    public class CharacterModel
+    public class WeaponModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public BackpackModel Backpack { get; set; }
-        public List<WeaponModel> Weapons { get; set; }
-        public List<FactionModel> Factions { get; set; }
+        public int CharacterId { get; set; }
+        public CharacterModel? Character { get; set; }
     }
 }
